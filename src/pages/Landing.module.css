@@ -1,0 +1,68 @@
+.page { padding: 0 32px 48px; }
+
+.hero {
+  text-align: center;
+  padding: 64px 24px 48px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  color: var(--brown);
+}
+.hero h1 em { font-style: italic; color: var(--warm); }
+.hero p { font-size: 17px; color: var(--muted); max-width: 460px; margin: 0 auto 32px; line-height: 1.65; }
+
+.heroBtns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.btnPrimary {
+  font-size: 16px; font-weight: 500; color: var(--cream);
+  padding: 14px 32px; border-radius: 50px; background: var(--brown);
+  text-decoration: none; transition: opacity 0.2s, transform 0.15s;
+}
+.btnPrimary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+.btnOutline {
+  font-size: 16px; font-weight: 500; color: var(--brown);
+  padding: 13px 32px; border-radius: 50px; background: transparent;
+  text-decoration: none; border: 1.5px solid var(--border);
+  transition: background 0.2s, transform 0.15s;
+}
+.btnOutline:hover { background: var(--border); transform: translateY(-1px); }
+
+.stats {
+  display: flex; gap: 32px; justify-content: center;
+  margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.stat { text-align: center; }
+.statNum { font-family: 'Fraunces', serif; font-size: 38px; font-weight: 700; color: var(--warm); }
+.statLabel { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+.wide { max-width: 1000px; margin: 0 auto; }
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 40px 0 48px;
+}
+.featureCard {
+  background: var(--white); border-radius: var(--radius);
+  padding: 24px 20px; border: 1px solid var(--border); text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.featureCard:hover { box-shadow: 0 6px 24px var(--shadow); transform: translateY(-2px); }
+.featureIcon { font-size: 28px; margin-bottom: 12px; }
+.featureCard h3 { font-size: 15px; font-weight: 500; margin-bottom: 6px; font-family: 'DM Sans', sans-serif; }
+.featureCard p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+.sectionTitle { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+.sectionSub { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+
+.seeAll { text-align: center; margin-top: 28px; }
